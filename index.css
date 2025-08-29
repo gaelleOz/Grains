@@ -25,7 +25,8 @@ html{
 
 .waiting{
   color:#E7E9E9;
-  font-size: 80px;
+  font-size: 170px;
+  padding-top: 65px;
 }
 
 .waiting2{
@@ -44,7 +45,7 @@ html{
 .banniere {
   background-image: url('images/image4.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center 60%;
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -92,7 +93,13 @@ html{
 /* Media Queries pour les appareils mobiles */
 @media screen and (max-width: 768px) {
   .waiting {
-    font-size: 30px;
+    font-size: 48px;
+    padding-top: 0; /* Supprime le padding-top existant */
+  }
+
+  .banniere {
+    background-position: center 25%;
+    min-height: 100vh;
   }
 
   .waiting2 {
@@ -104,11 +111,6 @@ html{
     font-size: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-
-  .banniere {
-    padding-left: 5%;
-    min-height: 80vh;
   }
 
   .photo {
@@ -129,8 +131,14 @@ html{
 /* Pour les très petits écrans */
 @media screen and (max-width: 480px) {
   .waiting {
-    font-size: 32px;
-    margin-left: 10px;
+    font-size: 50px;
+    margin-bottom: 90px;
+    margin-left: 70px;
+    color: black;
+  }
+
+  .banniere {
+    background-position: center 75%;
   }
 
   .waiting2 {
@@ -141,10 +149,6 @@ html{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  .banniere {
-    padding-left: 3%;
   }
 
   .photo {
